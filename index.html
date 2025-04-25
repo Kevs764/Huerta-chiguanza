@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pronóstico de Siembra en HUERTA CHIGUAZA</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="img/HUERTA.png" href="img/HUERTA.png">
+  <script src="https://cdn.jsdelivr.net/npm/lunarphase-js@2.0.3/dist/lunarphase.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Pronóstico de Clima para Siembra</h1>
+    <div id="clock"></div>
+  </header>
+
+  <main>
+    <!-- Sección de inicio de sesión -->
+    <section id="login-section">
+      <h2>Iniciar Sesión</h2>
+      <form id="login-form">
+        <input type="text" id="username" placeholder="Usuario" required>
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <button type="submit">Ingresar</button>
+      </form>
+    </section>
+
+    <!-- Sección principal de la app -->
+    <section id="app-section" class="hidden">
+      <button id="logout-button">Cerrar sesión</button>
+      <form id="weather-form">
+        <label for="city">Ciudad:</label>
+        <select id="city">
+          <option value="Bogotá">Bogotá</option>
+          <option value="Medellín">Medellín</option>
+          <option value="Cali">Cali</option>
+        </select>
+        <label for="date">Fecha:</label>
+        <input type="date" id="date" required>
+        <button type="submit">Consultar</button>
+      </form>
+
+      <div class="result">
+        <h3>Pronóstico:</h3>
+        <p id="weather"></p>
+        <p id="planting-advice"></p>
+        <p id="lunar-phase"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Pronóstico Siembra HUERTA CHIGUAZA</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
