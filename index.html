@@ -4,9 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pronóstico de Siembra en HUERTA CHIGUAZA</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="img/HUERTA.png" href="img/HUERTA.png">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="icon" href="https://img.icons8.com/color/48/000000/watering-can.png" type="image/png">
   <script src="https://cdn.jsdelivr.net/npm/lunarphase-js@2.0.3/dist/lunarphase.min.js"></script>
+  <style>
+    /* Aquí va todo el CSS (estilos) */
+  </style>
 </head>
 <body>
   <header>
@@ -15,7 +18,6 @@
   </header>
 
   <main>
-    <!-- Sección de inicio de sesión -->
     <section id="login-section">
       <h2>Iniciar Sesión</h2>
       <form id="login-form">
@@ -25,7 +27,6 @@
       </form>
     </section>
 
-    <!-- Sección principal de la app -->
     <section id="app-section" class="hidden">
       <button id="logout-button">Cerrar sesión</button>
       <form id="weather-form">
@@ -45,6 +46,7 @@
         <p id="weather"></p>
         <p id="planting-advice"></p>
         <p id="lunar-phase"></p>
+        <img id="lunar-image" src="" alt="Fase lunar">
       </div>
     </section>
   </main>
@@ -52,8 +54,7 @@
   <footer>
     <p>&copy; 2025 Pronóstico Siembra HUERTA CHIGUAZA</p>
   </footer>
-
-  <script src="script.js"></script>
+  <script src="log.js"></script>
 </body>
 </html>
 
